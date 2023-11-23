@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 func main() {
-	input := rand.New(rand.NewSource(time.Now().UnixMicro())).Intn(10) + 1
+	// input := rand.New(rand.NewSource(time.Now().UnixMicro())).Intn(10) + 1
+	input := 12
 	inputCh := make(chan int)
 
 	// execute function

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func sumOfSquare(numbers []int) int {
@@ -16,6 +17,8 @@ func spawn(numOfRoutine int, inputs []int) error {
 	if numOfRoutine > len(inputs) {
 		return fmt.Errorf("num of routine must be less than inputs length")
 	}
+
+	fmt.Println(math.Ceil(float64(len(inputs)) / float64(numOfRoutine)))
 
 	return nil
 }
